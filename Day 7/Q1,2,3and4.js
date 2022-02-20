@@ -27,7 +27,49 @@ console.log(movie1.getPG(moviesArr));
 
 //Write a "circle" class 
 
+class Circle {
+    constructor(radius, color) {
+        this.radius = radius;
+        this.color = color;
+    }
 
+    getRadius() {
+        return `Radius of the circle is: ${this.radius}`;
+    }
+
+    setRadius(newRadius) {
+        this.radius = newRadius;
+    } 
+
+    getColor() {
+        return `Color of the circle is: ${this.color}`;
+    }
+
+    setColor(newColor) {
+        this.color = newColor;
+    }
+
+    toString() {
+        return `Circle[radius=${this.radius}, color=${this.color}]`
+    }
+
+    getArea() {
+        return Math.PI*Math.pow(this.radius, 2);
+    }
+
+    getCircumference() {
+        return 2*this.radius;
+    }
+}
+
+let circle1 = new Circle(2.0, 'red')
+console.log(circle1.getRadius());
+console.log(circle1.getColor());
+circle1.setRadius(2.5);
+circle1.setColor('yellow');
+console.log(circle1.toString());
+console.log(circle1.getArea());
+console.log(circle1.getCircumference());
 
 //Write a “person” class to hold all the details.
 
