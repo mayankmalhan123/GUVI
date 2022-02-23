@@ -1,0 +1,42 @@
+
+div.outer-border{
+    margin: 5% 25%;
+    border: 5px solid black;
+    padding: 5px 20px;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: red;
+}
+
+input {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid black;
+}
+
+div.row {
+    margin-left: 15px;
+}
+
+.lname {
+    margin-left: 3rem;
+}
+
+.state {
+    margin-left: 2.1rem;
+}
+
+.zip {
+    margin-left: 2.2rem;
+}
+
+.inline-element {
+    display: inline-block;
+}
+

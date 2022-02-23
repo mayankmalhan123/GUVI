@@ -1,0 +1,45 @@
+<!-- Design a contact us form with all fields as required. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Contact Us</h3>
+        <form>
+            <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+            <tr>
+                <td><input name="Name" type="text" maxlength="60" placeholder="Name" style="width:100%;max-width:250px;" /></td>
+            </tr> 
+            <tr> 
+                <td><input name="PhoneNumber" type="number" maxlength="43" placeholder="Phone Number" style="width:100%;max-width:250px;" /></td>
+            </tr>
+            <tr> 
+                <td><input name="FromEmailAddress" type="email" maxlength="90" placeholder="Email" style="width:100%;max-width:250px;" /></td>
+            </tr> 
+            <tr>
+                <td><textarea name="Comments" rows="7" cols="40" placeholder="Message" style="width:100%;max-width:350px;"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit" /></td>
+            </tr>
+            <tr>
+                <td><p>Employee type</p></td>
+                <td>
+                    <input type="radio" name="employee" id="salaried" checked>
+                    <label for="salaried">Salaried</label>
+                </td>
+                <td>
+                    <input type="radio" name="employee" id="business">
+                    <label for="business">Own Business</label>
+                </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
