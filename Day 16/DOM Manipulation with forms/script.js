@@ -1,64 +1,64 @@
-var container = document.createElement("div");
+let container = document.createElement("div");
 container.className = "container";
 
-var div1 = document.createElement("div");
-var h1 = createtag("h1", "title", "Form");
-var p = createtag("p", "description", "Form Description");
+let div1 = document.createElement("div");
+let h1 = createtag("h1", "title", "Form");
+let p = createtag("p", "description", "Form Description");
 
-var row = document.createElement("div");
+let row = document.createElement("div");
 row.className = "row";
 row.className = "d-flex justify-content-center";
-var row1 = document.createElement("div");
+let row1 = document.createElement("div");
 row1.className = "row table";
 
-var form = document.createElement("form");
+let form = document.createElement("form");
 form.setAttribute("id", "form");
 
-var formdiv1 = createformdiv("form-group");
-var formdiv2 = createformdiv("form-group");
-var formdiv3 = createformdiv("form-group");
-var formdiv4 = createformdiv("form-group");
-var formdiv5 = createformdiv("form-check form-check-inline");
-var formdiv6 = createformdiv("form-check form-check-inline");
-var formdiv7 = createformdiv("form-check form-check-inline");
-var formdiv8 = createformdiv("form-check");
-var formdiv9 = createformdiv("form-check form-check-inline");
-var formdiv10 = createformdiv("form-check form-check-inline");
-var formdiv11 = createformdiv("form-check form-check-inline");
-var formdiv12 = createformdiv("form-check form-check-inline");
-var formdiv13 = createformdiv("form-check form-check-inline");
-var formdiv14 = createformdiv("form-group");
-var formdiv15 = createformdiv("form-group");
-var button = document.createElement("button");
+let formdiv1 = createformdiv("form-group");
+let formdiv2 = createformdiv("form-group");
+let formdiv3 = createformdiv("form-group");
+let formdiv4 = createformdiv("form-group");
+let formdiv5 = createformdiv("form-check form-check-inline");
+let formdiv6 = createformdiv("form-check form-check-inline");
+let formdiv7 = createformdiv("form-check form-check-inline");
+let formdiv8 = createformdiv("form-check");
+let formdiv9 = createformdiv("form-check form-check-inline");
+let formdiv10 = createformdiv("form-check form-check-inline");
+let formdiv11 = createformdiv("form-check form-check-inline");
+let formdiv12 = createformdiv("form-check form-check-inline");
+let formdiv13 = createformdiv("form-check form-check-inline");
+let formdiv14 = createformdiv("form-group");
+let formdiv15 = createformdiv("form-group");
+let button = document.createElement("button");
 button.setAttribute("type", "button");
 button.setAttribute("id", "submit");
 button.className = "btn btn-primary";
 button.innerHTML = "Submit";
 button.addEventListener("click", submit);
 
-var firstLabel = label("first-name", "First Name :");
-var lastLabel = label("last-name", "Last Name :");
-var addressLabel = label("address", "Address :");
-var pincodeLabel = label("pincode", "Pincode :");
-var genderLabel = label("gender", "Gender :");
-var maleLabel = label("maleid", "Male");
+let firstLabel = label("first-name", "First Name :");
+let lastLabel = label("last-name", "Last Name :");
+let addressLabel = label("address", "Address :");
+let pincodeLabel = label("pincode", "Pincode :");
+let genderLabel = label("gender", "Gender :");
+let maleLabel = label("maleid", "Male");
 maleLabel.className = "form-check-label";
-var femaleLabel = label("femaleid", "Female");
+let femaleLabel = label("femaleid", "Female");
 femaleLabel.className = "form-check-label";
-var foodlistLabel = label("foodlist", "Choose The Food :");
-var food1label = label("food1", "Noodles");
-var food2label = label("food2", "Chicken");
-var food3label = label("food3", "Briyani");
-var food4label = label("food4", "Chapathi");
-var food5label = label("food5", "icecream");
-var stateLabel = label("state-name", "State :");
-var countryLabel = label("country-name", "Country :");
+let foodlistLabel = label("foodlist", "Choose The Food :");
+let food1label = label("food1", "Noodles");
+let food2label = label("food2", "Chicken");
+let food3label = label("food3", "Briyani");
+let food4label = label("food4", "Chapathi");
+let food5label = label("food5", "icecream");
+let stateLabel = label("state-name", "State :");
+let countryLabel = label("country-name", "Country :");
 
-var firstname = input("input", "text", "first-name", "Enter the First name");
-var lastname = input("input", "text", "last-name", "Enter the Last name");
-var addressname = input("textarea", "textarea", "address", "Enter the Address");
-var pincodename = input("input", "text", "pincode", "Enter the Pincode");
-var malename = radio(
+let firstname = input("input", "text", "first-name", "Enter the First name");
+let lastname = input("input", "text", "last-name", "Enter the Last name");
+let addressname = input("textarea", "textarea", "address", "Enter the Address");
+let pincodename = input("input", "text", "pincode", "Enter the Pincode");
+let malename = radio(
   "input",
   "radio",
   "gender",
@@ -66,7 +66,7 @@ var malename = radio(
   "male",
   "form-check-input"
 );
-var femalename = radio(
+let femalename = radio(
   "input",
   "radio",
   "gender",
@@ -74,7 +74,7 @@ var femalename = radio(
   "female",
   "form-check-input"
 );
-var food1name = food(
+let food1name = food(
   "input",
   "checkbox",
   "food",
@@ -82,7 +82,7 @@ var food1name = food(
   "Noodles",
   "form-check-input"
 );
-var food2name = food(
+let food2name = food(
   "input",
   "checkbox",
   "food",
@@ -90,7 +90,7 @@ var food2name = food(
   "Chicken",
   "form-check-input"
 );
-var food3name = food(
+let food3name = food(
   "input",
   "checkbox",
   "food",
@@ -98,7 +98,7 @@ var food3name = food(
   "Briyani",
   "form-check-input"
 );
-var food4name = food(
+let food4name = food(
   "input",
   "checkbox",
   "food",
@@ -106,7 +106,7 @@ var food4name = food(
   "Chapathi",
   "form-check-input"
 );
-var food5name = food(
+let food5name = food(
   "input",
   "checkbox",
   "food",
@@ -114,23 +114,23 @@ var food5name = food(
   "Ice ccream",
   "form-check-input"
 );
-var statename = input("input", "text", "state-name", "Enter the State");
-var countryname = input("input", "text", "country-name", "Enter the Country");
+let statename = input("input", "text", "state-name", "Enter the State");
+let countryname = input("input", "text", "country-name", "Enter the Country");
 function createformdiv(classname) {
-  var div = document.createElement("div");
+  let div = document.createElement("div");
   div.className = classname;
   return div;
 }
 
 function label(forname, innerHTMLname) {
-  var label = document.createElement("label");
+  let label = document.createElement("label");
   label.setAttribute("for", forname);
   label.innerHTML = innerHTMLname;
   return label;
 }
 
 function input(inputtag, typename, idname, placeholdername) {
-  var name = document.createElement(inputtag);
+  let name = document.createElement(inputtag);
   name.setAttribute("type", typename);
   name.setAttribute("id", idname);
   name.setAttribute("placeholder", placeholdername);
@@ -148,7 +148,7 @@ function radio(
   radiovalue,
   rodioclassname
 ) {
-  var radio = document.createElement(radiotag);
+  let radio = document.createElement(radiotag);
   radio.setAttribute("type", radiotype);
   radio.setAttribute("name", radioname);
   radio.setAttribute("id", radioid);
@@ -157,7 +157,7 @@ function radio(
   return radio;
 }
 function food(foodtag, foodtype, foodname, foodid, foodvalue, foodclassname) {
-  var food = document.createElement(foodtag);
+  let food = document.createElement(foodtag);
   food.setAttribute("type", foodtype);
   food.setAttribute("name", foodname);
   food.setAttribute("id", foodid);
@@ -167,56 +167,52 @@ function food(foodtag, foodtype, foodname, foodid, foodvalue, foodclassname) {
 }
 
 function createtag(tagname, idname, data) {
-  var tag = document.createElement(tagname);
+  let tag = document.createElement(tagname);
   tag.setAttribute("id", idname);
   tag.innerHTML = data;
   return tag;
 }
-var table = document.createElement("table");
+
+let table = document.createElement("table");
 table.className = "table";
 table.setAttribute("id", "myTable");
-var thead = document.createElement("thead");
+let thead = document.createElement("thead");
 thead.className = "thead-dark";
+let tr = document.createElement("tr");
 
-var table = document.createElement("table");
-table.className = "table";
-table.setAttribute("id", "myTable");
-var thead = document.createElement("thead");
-thead.className = "thead-dark";
-
-var th1 = creater("th", "Firstname");
-var th2 = creater("th", "Lastname");
-var th3 = creater("th", "Address");
-var th4 = creater("th", "Pincode");
-var th5 = creater("th", "Gender");
-var th6 = creater("th", "Food List");
-var th7 = creater("th", "State");
-var th8 = creater("th", "Country");
+let th1 = creater("th", "Firstname");
+let th2 = creater("th", "Lastname");
+let th3 = creater("th", "Address");
+let th4 = creater("th", "Pincode");
+let th5 = creater("th", "Gender");
+let th6 = creater("th", "Food List");
+let th7 = creater("th", "State");
+let th8 = creater("th", "Country");
 tr.append(th1, th2, th3, th4, th5, th6, th7, th8);
 thead.append(tr);
 
-var tbody = document.createElement("tbody");
+let tbody = document.createElement("tbody");
 
 function creater(tag, data) {
-  var ele = document.createElement(tag);
+  let ele = document.createElement(tag);
   ele.innerHTML = data;
   return ele;
 }
 
 function submit() {
-  var firstnamedata = document.getElementById("first-name").value;
-  var lastnamedata = document.getElementById("last-name").value;
-  var addressdata = document.getElementById("address").value;
-  var pincodedata = document.getElementById("pincode").value;
-  var genderdata = document.getElementsByName("gender");
-  var foodlistdata = document.getElementsByName("food");
-  var statedata = document.getElementById("state-name").value;
-  var countrydata = document.getElementById("country-name").value;
+  let firstnamedata = document.getElementById("first-name").value;
+  let lastnamedata = document.getElementById("last-name").value;
+  let addressdata = document.getElementById("address").value;
+  let pincodedata = document.getElementById("pincode").value;
+  let genderdata = document.getElementsByName("gender");
+  let foodlistdata = document.getElementsByName("food");
+  let statedata = document.getElementById("state-name").value;
+  let countrydata = document.getElementById("country-name").value;
   for (i = 0; i < genderdata.length; i++) {
     if (genderdata[i].checked) genderdata = genderdata[i].value;
   }
-  var listoffood = [];
-  for (var checkbox of foodlistdata) {
+  let listoffood = [];
+  for (let checkbox of foodlistdata) {
     if (checkbox.checked) listoffood.push(checkbox.value);
   }
 
@@ -239,24 +235,24 @@ function submit() {
   ) {
     alert(" Fill the field");
   } else {
-    var table = document.getElementById("myTable");
+    let table = document.getElementById("myTable");
 
-    var row = table.insertRow(-1);
-    var firstname = row.insertCell(0);
-    var lastname = row.insertCell(1);
-    var address = row.insertCell(2);
-    var pincode = row.insertCell(3);
-    var gender = row.insertCell(4);
-    var foodlist = row.insertCell(5);
-    var state = row.insertCell(6);
-    var country = row.insertCell(7);
+    let row = table.insertRow(-1);
+    let firstname = row.insertCell(0);
+    let lastname = row.insertCell(1);
+    let address = row.insertCell(2);
+    let pincode = row.insertCell(3);
+    let gender = row.insertCell(4);
+    let foodlist = row.insertCell(5);
+    let state = row.insertCell(6);
+    let country = row.insertCell(7);
 
     firstname.innerHTML = firstnamedata;
     lastname.innerHTML = lastnamedata;
     address.innerHTML = addressdata;
     pincode.innerHTML = pincodedata;
     gender.innerHTML = genderdata;
-    var sum = "";
+    let sum = "";
     for (i = 0; i < listoffood.length; i++) {
       sum = `${sum}  ${listoffood[i]}`;
       foodlist.innerHTML = sum;
